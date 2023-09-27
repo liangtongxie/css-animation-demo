@@ -1,0 +1,106 @@
+<body>
+    <div class="container">
+        <div class="box-item box01 animation-box01">001</div>
+        <div class="box-item box02 animation-box02">002</div>
+    </div>
+
+    <style>
+        .container {
+            width: 100px;
+            height: 50px;
+            overflow: hidden;
+            background-color: blueviolet;
+        }
+
+        .box-item {
+            width: 50px;
+            height: 50px;
+            transition: all;
+        }
+        .box01 {
+            background-color: brown;
+        }
+        .box02 {
+            background-color: yellow;
+        }
+
+        .animation-box01 {
+            animation: box01 10s infinite;
+        }
+
+        @keyframes box01 {
+            0% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-100%);
+            }
+
+            51% {
+                transform: translate(-100000px, -100%);
+            }
+
+            52% {
+                transform: translate(-100000px, 100%);
+            }
+
+            60% {
+                transform: translate(0, 100%);
+            }
+
+            80% {
+                transform: translateY(0);
+            }
+            
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+        .animation-box02 {
+            animation: box02 10s infinite;
+        }
+
+        @keyframes box02 {
+            0% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-100%);
+            }
+
+            60% {
+                transform: translateY(-100%);
+            }
+
+            80% {
+                transform: translateY(-200%);
+            }
+            
+            91% {
+                transform: translate(-100000px, -200%);
+            }
+
+            92% {
+                transform: translate(-100000px, 0);
+            }
+
+            
+            100% {
+                transform: translate(0, 0);
+            }
+
+        }
+    </style>
+</body>
